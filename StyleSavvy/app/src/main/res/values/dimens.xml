@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_title_text_size">35sp</dimen>
+    <dimen name="dimen_10sdp">10dp</dimen>
+    <dimen name="dimen_15ssp">15ssp</dimen>
+    <dimen name="dimen_180sdp">180sdp</dimen>
+    <dimen name="dimen_260sdp">260sdp</dimen>
+    <dimen name="dimen_10dp">10sdp</dimen>
+    <dimen name="dimen_5sdp">5sdp</dimen>
+    <dimen name="dimen_24sdp">24sdp</dimen>
+    <dimen name="dimen_8ssp">8ssp</dimen>
+    <dimen name="dimen_80sdp">80sdp</dimen>
+    <dimen name="dimen_70sdp">70sdp</dimen>
+    <dimen name="dimen_11ssp">11ssp</dimen>
+
+</resources>

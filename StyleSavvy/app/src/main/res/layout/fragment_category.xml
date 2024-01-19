@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.bottom_fragment.CategoryFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10sdp"
+        android:layout_marginTop="@dimen/dimen_10sdp"
+        android:layout_marginEnd="@dimen/dimen_10sdp"
+        app:cardCornerRadius="@dimen/dimen_10sdp"
+        app:cardElevation="@dimen/dimen_10sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_product"
+                android:layout_width="@dimen/dimen_70sdp"
+                android:layout_height="@dimen/dimen_70sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-20dp"
+                android:layout_marginRight="-20dp"
+                android:src="@drawable/facecare" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/gilroy_bold"
+                android:maxEms="10"
+                android:maxLines="2"
+                android:padding="@dimen/dimen_10sdp"
+                android:text="Face Care"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_11ssp" />
+        </RelativeLayout>
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bg"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@color/transparent"
+            android:queryHint="Search for products"
+            android:theme="@style/ThemeOverlay.Search" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/fragment_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10sdp"
+        android:orientation="horizontal"
+        tools:itemCount="4"
+        tools:listitem="@layout/fragment_category" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skin Care"
+        android:textSize="@dimen/dimen_11ssp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:maxEms="10"
+        android:maxLines="2"
+        android:fontFamily="@font/gilroy_bold"
+        android:padding="@dimen/dimen_10sdp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_sub_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10sdp"
+        android:orientation="horizontal"
+        tools:itemCount="1"
+        tools:listitem="@layout/fragment_sub_category" />
+
+</FrameLayout>
